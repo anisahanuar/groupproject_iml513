@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HolaGO Quiz</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body class="relative min-h-screen">
+
+  <!-- Exit Button -->
+  <button onclick="history.back()"
+    class="fixed top-6 right-6 w-12 h-12 flex items-center justify-center
+           bg-pink-300 text-blue-900 text-2xl font-bold rounded-full
+           hover:bg-yellow-300 transition shadow-lg z-50">
+    ✕
+  </button>
+
+  <!-- Background Image -->
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('img/bg3.jpeg'); z-index:-10;"></div>
+
+  <!-- Blue Overlay for readability -->
+  <div class="absolute inset-0 bg-blue-900/80 z-0"></div>
+
+  <!-- Main Content -->
+  <div class="relative z-10 min-h-screen py-12">
+
+    <h1 class="text-center text-4xl font-bold text-pink-300 mb-10">
+      Frequently Asked Questions (FAQ)
+    </h1>
+
+    <div class="w-11/12 md:w-3/4 lg:w-2/3 mx-auto space-y-4">
+
+      <!-- FAQ 1 -->
+      <details class="bg-white rounded-xl shadow-lg group">
+        <summary class="flex justify-between items-center cursor-pointer p-6">
+          <span class="text-blue-900 font-bold text-lg">1. What is HolaGO?</span>
+          <span class="text-2xl font-bold text-pink-500 group-open:rotate-45 transition">+</span>
+        </summary>
+        <p class="px-6 pb-6 text-blue-900">
+          HolaGO is a fun and easy online platform that helps beginners learn Spanish through simple lessons,
+          quizzes, audio guides, and interactive activities.
+        </p>
+      </details>
+
+      <!-- FAQ 2 -->
+      <details class="bg-pink-200 rounded-xl shadow-lg group">
+        <summary class="flex justify-between items-center cursor-pointer p-6">
+          <span class="text-blue-900 font-bold text-lg">2. Who can use HolaGO?</span>
+          <span class="text-2xl font-bold text-pink-500 group-open:rotate-45 transition">+</span>
+        </summary>
+        <p class="px-6 pb-6 text-blue-900">
+          Anyone can use HolaGO! Whether you are a student, a complete beginner,
+          or just curious about Spanish, our website is designed for all learning levels.
+        </p>
+      </details>
+
+      <!-- FAQ 3 -->
+      <details class="bg-white rounded-xl shadow-lg group">
+        <summary class="flex justify-between items-center cursor-pointer p-6">
+          <span class="text-blue-900 font-bold text-lg">
+            3. Do I need any Spanish background before using HolaGO?
+          </span>
+          <span class="text-2xl font-bold text-pink-500 group-open:rotate-45 transition">+</span>
+        </summary>
+        <p class="px-6 pb-6 text-blue-900">
+          No! HolaGO is beginner-friendly. You can start from zero and learn step by step at your own pace.
+        </p>
+      </details>
+
+      <!-- FAQ 4 -->
+      <details class="bg-pink-200 rounded-xl shadow-lg group">
+        <summary class="flex justify-between items-center cursor-pointer p-6">
+          <span class="text-blue-900 font-bold text-lg">4. Is HolaGO free to use?</span>
+          <span class="text-2xl font-bold text-pink-500 group-open:rotate-45 transition">+</span>
+        </summary>
+        <p class="px-6 pb-6 text-blue-900">
+          Yes, all basic features such as lessons, quizzes,
+          and pronunciation guides are completely free.
+        </p>
+      </details>
+
+      <!-- FAQ 5 -->
+      <details class="bg-white rounded-xl shadow-lg group">
+        <summary class="flex justify-between items-center cursor-pointer p-6">
+          <span class="text-blue-900 font-bold text-lg">5. What can I learn on HolaGO?</span>
+          <span class="text-2xl font-bold text-pink-500 group-open:rotate-45 transition">+</span>
+        </summary>
+        <p class="px-6 pb-6 text-blue-900">
+          You can learn Spanish essentials like greetings, numbers,
+          colours, daily phrases, and pronunciation.
+          More topics will be added over time!
+        </p>
+      </details>
+
+      <!-- FAQ 6 -->
+      <details class="bg-pink-200 rounded-xl shadow-lg group">
+        <summary class="flex justify-between items-center cursor-pointer p-6">
+          <span class="text-blue-900 font-bold text-lg">6. How do I use the quizzes?</span>
+          <span class="text-2xl font-bold text-pink-500 group-open:rotate-45 transition">+</span>
+        </summary>
+        <p class="px-6 pb-6 text-blue-900">
+          Just click the PLAY button on any quiz card and you’ll be redirected
+          to a Kahoot challenge where you can test your Spanish skills.
+        </p>
+      </details>
+
+      <!-- FAQ 7 -->
+      <details class="bg-white rounded-xl shadow-lg group">
+        <summary class="flex justify-between items-center cursor-pointer p-6">
+          <span class="text-blue-900 font-bold text-lg">7. Can I access HolaGO on my phone?</span>
+          <span class="text-2xl font-bold text-pink-500 group-open:rotate-45 transition">+</span>
+        </summary>
+        <p class="px-6 pb-6 text-blue-900">
+          Absolutely! HolaGO is mobile-friendly and works on phones,
+          tablets, and computers.
+        </p>
+      </details>
+
+      <!-- FAQ 8 -->
+      <details class="bg-pink-200 rounded-xl shadow-lg group">
+        <summary class="flex justify-between items-center cursor-pointer p-6">
+          <span class="text-blue-900 font-bold text-lg">8. Who created HolaGO?</span>
+          <span class="text-2xl font-bold text-pink-500 group-open:rotate-45 transition">+</span>
+        </summary>
+        <p class="px-6 pb-6 text-blue-900">
+          HolaGO was created as a student project to help Malaysians learn Spanish
+          in a fun, interactive, and beginner-friendly way.
+        </p>
+      </details>
+
+    </div>
+
+    <!-- Contact Section -->
+    <div class="text-center mt-16">
+      <h2 class="text-3xl font-extrabold text-pink-300 mb-4">
+        Still Have any Question?
+      </h2>
+
+      <!-- BUTTON WITH LINK -->
+      <a href="aboutus.html">
+        <button class="px-8 py-3 border-2 border-pink-400 text-pink-400 font-bold rounded-xl
+                       hover:bg-pink-400 hover:text-blue-900 transition">
+          Contact us Now
+        </button>
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HolaGO.com</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" /> <!-- Link to external CSS file -->
+</head>
+<body class="bg-image font-sans">
+<body class="font-sans"
+      style="background-image: url('img/bg1.jpeg');
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;">
+
+
+  <!-- NAVBAR -->
+  <nav class="bg-blue-900 text-white py-4 px-8 flex justify-between items-center">
+    <h1 class="text-4xl font-bold tracking-wide font-serif">
+      <span class="text-pink-300">Hola</span>GO
+      <span class="text-pink-300">.com</span>
+    </h1>
+    <ul class="flex gap-10 text-xl font-semibold">
+      <li><a href="index.html" class="hover:text-yellow-300">HOME</a></li>
+      <li><a href="aboutus.html" class="hover:text-yellow-300">ABOUT US</a></li>
+      <li><a href="learn.html" class="hover:text-yellow-300">LEARN</a></li>
+      <li><a href="quiz.html" class="hover:text-yellow-300">QUIZ</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENT IMAGES SECTION -->
+<div class="image-container">
+  <div class="relative">
+    <img src="img/bullfight-in-spain.avif" class="image-frame" style="width:400px; height:320px;" alt="Culture" />
+  </div>
+  <div class="relative">
+    <img src="img/download.jfif" class="image-frame" style="width:400px; height:320px;" alt="Food" />
+  </div>
+  <div class="relative">
+    <img src="img/images (1).jfif" class="image-frame" style="width:400px; height:320px;" alt="Alphabet" />
+  </div>
+  <div class="relative">
+    <img src="img/images.jfif" class="image-frame" style="width:400px; height:320px;" alt="Alphabet" />
+  </div>
+</div>
+
+
+  <!-- TEXT DESCRIPTION -->
+
+<div class="px-40 text-justify text-base font-semibold text-gray-700 leading-[1.6] mt-8 font-['Inter']
+            border-2 border-pink-300 rounded-2xl p-7 bg-white bg-opacity-70">
+HolaGO is a simple and beginner friendly learning platform designed to help users improve basic Spanish through short 
+lessons, clear examples and interactive practice.Many users often ask what HolaGO actually is and how it works, so to clarify, HolaGO is an online learning website that 
+focuses on teaching Spanish in a fun, bite sized and easy to understand way. Some learners also wonder if HolaGO is suitable for complete beginners and the answer is yes. Every lesson is built from 
+the ground up, starting with words, phrases and basic grammar so anyone can learn even without prior knowledge. Another common question is whether HolaGO is free to use and at the moment all materials, activities and quizzes are fully 
+accessible with no payment required. Users also tend to ask how fast they can learn Spanish using HolaGO. While it depends on consistency, HolaGO’s micro-learning 
+approach makes it easy to learn a little every day without feeling overwhelmed. People also ask what makes HolaGO different from other learning websites, and the biggest difference is its clean interface, 
+short lessons and real-life phrases that focus on practical use instead of complicated grammar. Another FAQ is whether HolaGO provides pronunciation help and yes, every lesson includes audio guides to help users hear how 
+words actually sound. Some users also ask if HolaGO can be used on mobile devices and the site is fully responsive, meaning it works smoothly on 
+phones, tablets and laptops. Lastly, many learners ask if HolaGO will add more features in the future and the answer is absolutely yes. More lessons, 
+cultural notes, mini games and interactive activities are planned to make learning even more enjoyable and effective.
+</div>
+
+
+
+  <!-- BUTTON + TAGLINE -->
+  <div class="flex justify-center items-center gap-10 py-10">
+    <a href="learn.html">
+  <button class="mt-6 bg-pink-300 text-blue-900 font-semibold px-8 py-3 rounded-full text-lg shadow self-start 
+                 transition-transform duration-200 hover:scale-110">
+    LEARN MORE
+  </button>
+</a>
+    </div>
+
+  <!-- CENTER QUOTE -->
+<div class="flex justify-center">
+  <h2 class="text-center text-pink-500 text-3xl italic font-bold mb-10
+             inline-block border-2 border-pink-300 rounded-full px-10 py-4
+             bg-white bg-opacity-70">
+    “Say Hola To New Skill”
+  </h2>
+</div>
+
+
+
+<!-- Floating Help Button -->
+<div id="helpBtn"  
+     class="fixed bottom-8 right-8 w-16 h-16 bg-pink-300 rounded-full shadow-lg flex items-center justify-center cursor-pointer hover:scale-110 transition">
+
+    <img src="img/bg-3.png" alt="Help Icon" class="w-12 h-12">
+</div>
+
+
+<!-- Popup Background -->
+<div id="popupBg" 
+     class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center">
+    
+    <!-- Popup Box -->
+    <div class="bg-white w-11/12 md:w-1/2 lg:w-1/3 rounded-2xl p-6 shadow-xl relative">
+        
+        <!-- Close Button -->
+        <button id="closePopup" 
+                class="absolute top-3 right-4 text-2xl font-bold text-gray-500 hover:text-black">
+            ✖
+        </button>
+
+        <h2 class="text-2xl font-bold text-center mb-4 text-pink-500">
+            Need Help? Tell Us!
+        </h2>
+
+        <!-- Google Form Embed -->
+        <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfz_8zX4J8JT-VNEhAmJItinvvuFhJkJo5PSw-tLTeGITd2xQ/viewform?usp=sharing&ouid=109383286995677114089"
+            class="w-full h-96 rounded-xl"
+            frameborder="0">
+        </iframe>
+    </div>
+</div>
+
+
+  <!-- FOOTER -->
+<footer class="bg-blue-900 text-gray-300 text-center py-4 mt-10">
+ HolaGo.com | 2025 | <a href="faq.html">FAQ</a>
+</footer>
+
+<script>
+    const helpBtn = document.getElementById("helpBtn");
+    const popupBg = document.getElementById("popupBg");
+    const closePopup = document.getElementById("closePopup");
+
+    helpBtn.addEventListener("click", () => {
+        popupBg.classList.remove("hidden");
+    });
+
+    closePopup.addEventListener("click", () => {
+        popupBg.classList.add("hidden");
+    });
+
+    popupBg.addEventListener("click", (e) => {
+        if (e.target === popupBg) {
+            popupBg.classList.add("hidden");
+        }
+    });
+</script>
+</body>
+</html>

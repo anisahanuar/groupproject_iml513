@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HolaGO Quiz</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="font-sans"
+      style="background-image: url('img/bg5.jpeg');
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;">
+
+  <!-- NAVBAR (fixed) -->
+  <nav class="bg-blue-900 text-white py-4 px-8 flex justify-between items-center">
+    <h1 class="text-4xl font-bold tracking-wide font-serif">
+      <span class="text-pink-300">Hola</span>GO
+      <span class="text-pink-300">.com</span>
+    </h1>
+    <ul class="flex gap-10 text-xl font-semibold">
+      <li><a href="index.html" class="hover:text-yellow-300">HOME</a></li>
+      <li><a href="aboutus.html" class="hover:text-yellow-300">ABOUT US</a></li>
+      <li><a href="learn.html" class="hover:text-yellow-300">LEARN</a></li>
+      <li><a href="quiz.html" class="hover:text-yellow-300">QUIZ</a></li>
+    </ul>
+  </nav>
+
+  <!-- Beginner Quiz Block -->
+<div class="w-11/12 mx-auto bg-yellow-300 mt-8 rounded-3xl p-8 text-center">
+  <img src="img/1.png" alt="Beginner Image" class="w-11/12 h-60 object-cover rounded-3xl mx-auto" />
+  <h2 class="text-3xl font-bold text-orange-600 mt-4">BEGINNER QUIZ</h2>
+  <a 
+    href="https://kahoot.it/challenge/8531fc54-7aa9-4d25-8467-fccbc6ab3edb_1768985578250" 
+    target="_blank"
+  >
+    <button 
+      class="mt-4 bg-pink-400 text-white px-10 py-3 rounded-xl text-xl font-semibold 
+             transform transition duration-200 hover:scale-110">
+      PLAY
+    </button>
+  </a>
+</div>
+
+  <!-- Advanced Quiz Block -->
+<div class="w-11/12 mx-auto bg-yellow-300 mt-8 rounded-3xl p-8 text-center">
+  <img src="imG/2.png" alt="Beginner Image" class="w-11/12 h-60 object-cover rounded-3xl mx-auto" />
+  <h2 class="text-3xl font-bold text-orange-600 mt-4">ADVANCED QUIZ</h2>
+  <a 
+    href="https://kahoot.it/challenge/8531fc54-7aa9-4d25-8467-fccbc6ab3edb_1768985688390" 
+    target="_blank"
+  >
+    <button 
+      class="mt-4 bg-pink-400 text-white px-10 py-3 rounded-xl text-xl font-semibold 
+             transform transition duration-200 hover:scale-110">
+      PLAY
+    </button>
+  </a>
+</div>
+
+<!-- Floating Help Button -->
+<div id="helpBtn"  
+     class="fixed bottom-8 right-8 w-16 h-16 bg-pink-300 rounded-full shadow-lg flex items-center justify-center cursor-pointer hover:scale-110 transition">
+
+    <img src="img/bg-3.png" alt="Help Icon" class="w-12 h-12">
+</div>
+
+
+<!-- Popup Background -->
+<div id="popupBg" 
+     class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center">
+    
+    <!-- Popup Box -->
+    <div class="bg-white w-11/12 md:w-1/2 lg:w-1/3 rounded-2xl p-6 shadow-xl relative">
+        
+        <!-- Close Button -->
+        <button id="closePopup" 
+                class="absolute top-3 right-4 text-2xl font-bold text-gray-500 hover:text-black">
+            ✖
+        </button>
+
+        <h2 class="text-2xl font-bold text-center mb-4 text-pink-500">
+            Need Help? Tell Us!
+        </h2>
+
+        <!-- Google Form Embed -->
+        <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfz_8zX4J8JT-VNEhAmJItinvvuFhJkJo5PSw-tLTeGITd2xQ/viewform?usp=sharing&ouid=109383286995677114089"
+            class="w-full h-96 rounded-xl"
+            frameborder="0">
+        </iframe>
+    </div>
+</div>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-900 text-gray-300 text-center py-4 mt-10">
+   HolaGo.com | 2025 | <a href="faq.html">FAQ</a>
+  </footer>
+<script>
+    const helpBtn = document.getElementById("helpBtn");
+    const popupBg = document.getElementById("popupBg");
+    const closePopup = document.getElementById("closePopup");
+
+    helpBtn.addEventListener("click", () => {
+        popupBg.classList.remove("hidden");
+    });
+
+    closePopup.addEventListener("click", () => {
+        popupBg.classList.add("hidden");
+    });
+
+    popupBg.addEventListener("click", (e) => {
+        if (e.target === popupBg) {
+            popupBg.classList.add("hidden");
+        }
+    });
+</script>
+
+</body>
+</html>
